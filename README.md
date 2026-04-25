@@ -85,4 +85,5 @@ python -m streamlit run app.py
 
 ## Screenshots
 
-(Add your screenshots here)
+![emergency](output.png)
+![warehouse](output.png)
