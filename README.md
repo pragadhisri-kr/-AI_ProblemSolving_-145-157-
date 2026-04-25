@@ -22,7 +22,7 @@ A warehouse robot rearranges blocks from an initial configuration into a desired
 * Breadth First Search (BFS)
   
 
-## ▶️ Execution Steps
+## Execution Steps
 
 1. Enter initial and goal stack configurations.
 2. Represent blocks as stacks internally.
@@ -42,9 +42,23 @@ A warehouse robot rearranges blocks from an initial configuration into a desired
 
 ### Sample Output
 
-* Move C from Stack 1 to Stack 2
-* Move B from Stack 1 to Stack 2
+Initial State:
+Stack 1: A C B
+Stack 2: —
+Stack 3: —
 
+Goal State:
+Stack 1: —
+Stack 2: A B C
+Stack 3: —
+
+Execution Trace:
+Step 1: Move C from Stack 1 → Stack 2  
+Step 2: Move B from Stack 1 → Stack 2  
+Step 3: Move A from Stack 1 → Stack 2  
+
+Final Result:
+Goal state achieved successfully in 3 moves.
 ---
 
 ##  Problem 2: Smart Emergency Response System
@@ -59,13 +73,15 @@ This system helps in selecting the nearest emergency service (Fire, Medical, Pol
 
 ##  Execution Steps
 
-1. Select starting location.
-2. Choose emergency type (Fire / Medical / Police).
-3. Identify nearest service location.
-4. Apply A* algorithm to find optimal path.
-5. Calculate cost and heuristic values.
-6. Determine shortest route.
-7. Display path and total cost.
+1.Input the source location (incident point).
+2.Select the type of emergency (Fire / Medical / Police).
+3.System identifies the nearest available service station.
+4.Construct a weighted graph representing the city network.
+5.Apply the A search algorithm* using:
+g(n): actual travel cost
+h(n): heuristic estimated cost
+6.Evaluate and expand nodes based on minimum f(n) = g(n) + h(n).
+7.Generate the optimal path with minimum response time and display results.
 
 ### Features
 
@@ -76,9 +92,24 @@ This system helps in selecting the nearest emergency service (Fire, Medical, Pol
 
 ### Sample Output
 
-* Path: A → B → E → F
-* Cost: 6
+Input:
+Location: Node A  
+Emergency Type: Medical  
 
+Processing:
+Nearest Hospital Identified: Hospital F  
+Algorithm Used: A* Search  
+
+Optimal Path Found:
+A → B → D → F  
+
+Performance Metrics:
+Total Cost (g): 6  
+Heuristic (h): 0  
+Final Cost (f): 6  
+
+Output:
+Fastest emergency response route successfully computed.
 ---
 Website Links (Live Demo)
 
