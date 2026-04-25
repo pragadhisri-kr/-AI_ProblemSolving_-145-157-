@@ -61,7 +61,7 @@ Finds the best route for emergency services using AI search.
 ##Website link
 
 http://localhost:8502/
-
+ http://10.216.19.187:8502
 ## How to Run
 
 ### Warehouse Robot
