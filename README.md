@@ -14,12 +14,24 @@ AI Problem Solving using BFS, DFS (Drone Path Finder) and Minimax (Job Schedulin
 
 ### Description
 
-A robot rearranges blocks from an initial configuration to a goal configuration using valid moves.
+A warehouse robot rearranges blocks from an initial configuration into a desired goal configuration. The robot follows valid rules where only the top block of any stack can be moved, and each move transforms the system step-by-step until the goal state is achieved.
 
 ### Algorithm Used
 
 * State Space Search
 * Breadth First Search (BFS)
+  
+
+## ▶️ Execution Steps
+
+1. Enter initial and goal stack configurations.
+2. Represent blocks as stacks internally.
+3. Apply BFS to explore possible states.
+4. Move only the top block between stacks.
+5. Generate valid intermediate states.
+6. Check for goal state after each move.
+7. Display step-by-step solution when goal is reached.
+
 
 ### Features
 
@@ -39,11 +51,21 @@ A robot rearranges blocks from an initial configuration to a goal configuration 
 
 ### Description
 
-Finds the best route for emergency services using AI search.
+This system helps in selecting the nearest emergency service (Fire, Medical, Police) and finds the optimal route from a given location using intelligent search techniques.
 
 ### Algorithm Used
 
 * A* Search Algorithm
+
+##  Execution Steps
+
+1. Select starting location.
+2. Choose emergency type (Fire / Medical / Police).
+3. Identify nearest service location.
+4. Apply A* algorithm to find optimal path.
+5. Calculate cost and heuristic values.
+6. Determine shortest route.
+7. Display path and total cost.
 
 ### Features
 
