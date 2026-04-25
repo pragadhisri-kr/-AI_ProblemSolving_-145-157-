@@ -1,5 +1,5 @@
 # -AI_ProblemSolving_-145-157-
-AI Problem Solving using BFS, DFS (Drone Path Finder) and Minimax (Job Scheduling) with GUI in Python
+AI Problem Solving using A* (Smart Emergency Response System) and Search-based Planning (Warehouse Robot Planner – Blocks World) with visualization and decision support in Python.
 
 # AI Problem Solving Assignment
 
