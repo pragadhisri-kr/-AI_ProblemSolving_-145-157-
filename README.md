@@ -10,7 +10,7 @@ AI Problem Solving using BFS, DFS (Drone Path Finder) and Minimax (Job Schedulin
 
 ---
 
-##  Problem 7: Warehouse Robot Planner
+##  Problem 1: Warehouse Robot Planner
 
 ### Description
 
